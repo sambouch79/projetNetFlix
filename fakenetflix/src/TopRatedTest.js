@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 import {dataservices} from "./service/dataservice"
-import { Arrow } from "./Arrow"
 
-export default class TopRated extends Component {
+
+export default class TopRatedTest extends Component {
     constructor(props) {
         super(props)
         this.state ={
