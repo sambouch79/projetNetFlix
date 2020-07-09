@@ -1,8 +1,9 @@
 import React from 'react'
 import { Slide } from 'react-slideshow-image'
-import BladeRunner from './imgfilms/ImgCarou/ladeRunner.jpg'
+import BladeRunner from './imgfilms/ImgCarou/BladeRunner.jpg'
 import gravity from './imgfilms/ImgCarou/gravity.jpg'
-import StrangerThings from './imgfilms/ImgCarou/StrangerThings'
+import StrangerThings from './imgfilms/ImgCarou/StrangerThings.jpg'
+
 
 
 const propriety = {
@@ -10,10 +11,11 @@ const propriety = {
     arrows: true,
 
 }
-const Slide = () => {
+const Slideshow = () => {
     return (
         <div className="slides">
-            <Slide {...propriety}>
+
+            <Slide {...propriety} >
                 <div className="slide">
                     <div> <img src={BladeRunner}></img></div>
                 </div>
@@ -27,4 +29,4 @@ const Slide = () => {
         </div>
     )
 }
-export default Slide
+export default Slideshow
