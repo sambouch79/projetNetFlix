@@ -18,6 +18,17 @@
       width:90% ;
 
   }
- 
+ p{
+   width: 30%;
    
+   font-size: 25px;
+   color: gray;
+   margin: 15px;
+   padding: 10px;
+
+
+ }
+h1{
+  padding:10px;
+} 
   
