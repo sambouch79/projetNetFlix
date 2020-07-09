@@ -41,6 +41,7 @@ export default class TopRatedTest extends Component {
                 </div>
                 <div className="row">
                 <ul className="row list-group-horizontal-sm  bg-dark text-white">
+                    <Arrow type='left' click={this.leftClick}/>
                         <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
                         <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
                         <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
