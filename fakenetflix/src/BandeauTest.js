@@ -1,4 +1,5 @@
-import React, { Component } from "react"
+import React, { Component, Slide } from "react"
+
 
 export default class Bandeau extends Component {
     constructor(props) {
@@ -13,7 +14,7 @@ export default class Bandeau extends Component {
                     <h1>Bandeau</h1>
                 </div>
                 <div>
-                    Contenu Bandeau
+                    contenu bandeau
                 </div>
             </div>
         )
