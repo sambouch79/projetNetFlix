@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 
-export default class MaListe extends Component {
+export default class MaListeTest extends Component {
     constructor(props) {
         super(props)
 

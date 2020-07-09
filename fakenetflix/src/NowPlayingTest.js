@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { dataservices } from "./service/dataservice"
 
-export default class NowPlaying extends Component {
+export default class NowPlayingTest extends Component {
     constructor(props) {
         super(props)
            

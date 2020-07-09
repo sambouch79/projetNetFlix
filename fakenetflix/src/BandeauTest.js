@@ -1,7 +1,7 @@
 import React, { Component, Slide } from "react"
 
 
-export default class Bandeau extends Component {
+export default class BandeauTest extends Component {
     constructor(props) {
         super(props)
 
