@@ -7,7 +7,7 @@ class Footer extends Component {
         return (
             <footer className="container-fluid bg-dark ">
                 <nav className="navbar navbar-dark bg-darg">
-                    <a className="navbar-brand" href="#"><logo></logo></a>
+                    <a className="navbar-brand" href="#"><Logo></Logo></a>
                     <div > ©2020. All Rights Reserved by .</div>
 
                 </nav>
