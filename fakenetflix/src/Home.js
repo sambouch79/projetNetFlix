@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import TopRated from "./TopRated"
 
 
 
@@ -40,15 +41,7 @@ class Home extends Component {
                         <div className="col-2"> <img src="https://picsum.photos/id/237/200/300"/> </div>
                     </div>
                     <div className="row">
-                        <h1 className="text-left">Top Rated</h1>
-                    </div>
-                    <div className="row">
-                    <div className="col-2" >  <img src="https://picsum.photos/id/237/200/300"/></div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/566/200/300"/> </div> 
-                        <div className="col-2"> <img src="https://picsum.photos/id/568/200/300"/> </div> 
-                        <div className="col-2"> <img src="https://picsum.photos/id/237/200/300"/> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/568/200/300"/> </div> 
-                        <div className="col-2"> <img src="https://picsum.photos/id/237/200/300"/> </div>
+                        <TopRated></TopRated>
                     </div>
                     <div className="row">
                         <h1 className="text-left">Now playing</h1>
