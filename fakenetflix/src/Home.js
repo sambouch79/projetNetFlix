@@ -4,7 +4,6 @@ import Slideshow from './Slide'
 import './slide.css'
 
 
-
 class Home extends Component {
     constructor(props) {
         super(props)
@@ -23,7 +22,7 @@ class Home extends Component {
                         <Slideshow></Slideshow>
                     </div>
                     <div className="col-12 display-3">
-
+                        <Popular></Popular>
                     </div>
                     <div className="col-12 display-4">
 
