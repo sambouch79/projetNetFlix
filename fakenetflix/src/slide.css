@@ -1,0 +1,23 @@
+.slide-container {
+    width: 90%;
+    margin: auto;
+    
+}
+   
+  h3 {
+    text-align: center; }
+   
+  .each-slide > div {
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 500px;
+  }
+  .imgSlide{
+      height:500px ;
+      width:90% ;
+
+  }
+ 
+   
+  

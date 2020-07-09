@@ -5,7 +5,7 @@ class Header extends Component {
 
     render() {
         return (
-            <header className="container-fluid">
+            <header className="container-fluid p-0">
                 <nav class="navbar navbar-dark bg-dark">
                     <Logo></Logo>
                     <form class="form-inline">
