@@ -1,10 +1,8 @@
 import React, { Component } from "react"
-// import {Upcoming} from "./upcoming/Upcoming"
-
+import {Upcoming} from "./upcoming/Upcoming"
 import PopularTest from './PopularTest'
-import TopRated from "./TopRatedTest"
+import TopRatedTest from "./TopRatedTest"
 import BandeauTest from "./BandeauTest"
-import UpcomingTest from "./UpComingTest"
 import NowPlayingTest from "./NowPlayingTest"
 import MaListeTest from "./MaListe"
 
@@ -26,29 +24,23 @@ class Home extends Component {
                 <div>
                     <Slideshow></Slideshow>
                 </div>
-                <div className="row flex">
-                </div>
+
                 <h1 className="text-left">Up Coming </h1>
-                <div className="row flex">
-                    <div className="col-2" > <img src="https://picsum.photos/id/237/200/300" /></div>
-                    <div className="col-2"> <img src="https://picsum.photos/id/566/200/300" /> </div>
-                    <div className="col-2"> <img src="https://picsum.photos/id/568/200/300" /> </div>
-                    <div className="col-2"> <img src="https://picsum.photos/id/237/200/300" /> </div>
-                    <div className="col-2"> <img src="https://picsum.photos/id/568/200/300" /> </div>
-                    <div className="col-2"> <img src="https://picsum.photos/id/237/200/300" /> </div>
-                </div>
+                
+                    <Upcoming></Upcoming>
+                
                 <div className="row flex"></div>
                     <Popular></Popular>
                 <div className='row'>
                   
                     <div className="col-12 display-2">
-                        <UpcomingTest></UpcomingTest>
+                        
                     </div>
                     <div className="col-12 display-3">
                         <PopularTest></PopularTest>
                     </div>
                     <div className="col-12 display-4">
-                        <TopRated></TopRated>
+                        <TopRatedTest></TopRatedTest>
                     </div>
                     <div className="col-12 display-5">
                         <NowPlayingTest></NowPlayingTest>
