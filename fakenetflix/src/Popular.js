@@ -14,7 +14,7 @@ export default class Popular extends Component {
         let i = 1;
         for (i of this.state.films) {
             console.log(i.Imgband)
-            images.push(<img src="{i.Imgband}" alt="#" className='col' />)
+            images.push(<img src={i.Imgband} alt="#" className='col' />)
 
         }
 

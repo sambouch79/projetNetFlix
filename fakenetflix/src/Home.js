@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import Popular from './Popular'
 import Slideshow from './Slide'
 import './slide.css'
-
+import Upcoming from "./upcoming/Upcoming"
 
 class Home extends Component {
     constructor(props) {
@@ -22,10 +22,10 @@ class Home extends Component {
                         <Slideshow></Slideshow>
                     </div>
                     <div className="col-12 display-3">
-                        <Popular></Popular>
+
                     </div>
                     <div className="col-12 display-4">
-
+                        <Upcoming></Upcoming>
                     </div>
                     <div className="col-12 display-5">
 
