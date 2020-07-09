@@ -36,13 +36,10 @@ class Home extends Component {
                     <div className="col-2"> <img src="https://picsum.photos/id/568/200/300" /> </div>
                     <div className="col-2"> <img src="https://picsum.photos/id/237/200/300" /> </div>
                 </div>
-
-                <div className="row flex">
+                <div className="row flex"></div>
                     <Popular></Popular>
                 <div className='row'>
-                    <div className="col-12 display-1">
-                        <BandeauTest></BandeauTest>
-                    </div>
+                  
                     <div className="col-12 display-2">
                         <UpcomingTest></UpcomingTest>
                     </div>
