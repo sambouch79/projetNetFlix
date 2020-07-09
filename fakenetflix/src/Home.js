@@ -18,13 +18,13 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="p-3 mb-2 bg-dark text-white">
+            <div className=" mb-2 bg-dark text-white">
 
                 <div className='row'>
-                    <div className="col-12 display-1">
+                    <div className="col-12  display-1">
 
                     </div>
-                    <div className="col-12 display-2">
+                    <div className="col-12  p-0 m-0 display-2">
                         <Slideshow></Slideshow>
                     </div>
                     <div className="col-12 display-3">
