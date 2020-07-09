@@ -1,8 +1,14 @@
 import React, { Component } from "react"
+import Upcoming from "./upcoming/Upcoming"
+import PopularTest from './PopularTest'
+import TopRatedTest from "./TopRatedTest"
+import BandeauTest from "./BandeauTest"
+import NowPlayingTest from "./NowPlayingTest"
+import MaListeTest from "./MaListe"
 import Popular from './Popular'
 import Slideshow from './Slide'
 import './slide.css'
-import Upcoming from "./upcoming/Upcoming"
+import './popular.css'
 
 class Home extends Component {
     constructor(props) {
@@ -22,13 +28,13 @@ class Home extends Component {
                         <Slideshow></Slideshow>
                     </div>
                     <div className="col-12 display-3">
-
-                    </div>
-                    <div className="col-12 display-4">
                         <Upcoming></Upcoming>
                     </div>
+                    <div className="col-12 display-4">
+                        <TopRatedTest></TopRatedTest>
+                    </div>
                     <div className="col-12 display-5">
-
+                        <Popular></Popular>
                     </div>
                     <div className="col-12 display-6">
 

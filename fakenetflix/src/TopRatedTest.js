@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import {dataservices} from "./service/dataservice"
+import {Arrow} from "./Arrow"
 
 
 export default class TopRatedTest extends Component {
@@ -34,7 +35,7 @@ export default class TopRatedTest extends Component {
 
     render(){
         return(
-            <div>
+            <div className="h-25 overflow-hiden">
                 <div className= "">
                     <h1>Top Rated</h1>
                 </div>

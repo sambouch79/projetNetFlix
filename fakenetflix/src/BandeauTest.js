@@ -7,7 +7,7 @@ export default class BandeauTest extends Component {
 
     }
 
-    render () {
+    render() {
         return (
             <div>
                 <div>
