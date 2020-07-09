@@ -1,10 +1,10 @@
 import React, { Component } from "react"
-import Popular from './PopularTest'
+import PopularTest from './PopularTest'
 import TopRated from "./TopRatedTest"
-import Bandeau from "./BandeauTest"
-import Upcoming from "./UpComingTest"
-import NowPlaying from "./NowPlayingTest"
-import MaListe from "./MaListe"
+import BandeauTest from "./BandeauTest"
+import UpcomingTest from "./UpComingTest"
+import NowPlayingTest from "./NowPlayingTest"
+import MaListeTest from "./MaListe"
 
 
 class Home extends Component {
@@ -19,22 +19,22 @@ class Home extends Component {
 
                 <div className='row'>
                     <div className="col-12 display-1">
-                        <Bandeau></Bandeau>
+                        <BandeauTest></BandeauTest>
                     </div>
                     <div className="col-12 display-2">
-                        <Upcoming></Upcoming>
+                        <UpcomingTest></UpcomingTest>
                     </div>
                     <div className="col-12 display-3">
-                        <Popular></Popular>
+                        <PopularTest></PopularTest>
                     </div>
                     <div className="col-12 display-4">
                         <TopRated></TopRated>
                     </div>
                     <div className="col-12 display-5">
-                        <NowPlaying></NowPlaying>
+                        <NowPlayingTest></NowPlayingTest>
                     </div>
                     <div className="col-12 display-6">
-                        <MaListe></MaListe>
+                        <MaListeTest></MaListeTest>
                     </div>
                 </div>
             </div>
