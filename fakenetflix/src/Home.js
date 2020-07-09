@@ -1,10 +1,9 @@
 import React, { Component } from "react"
-<<<<<<< HEAD
-import TopRated from "./TopRated"
-
-=======
-import Popular from './Popular'
->>>>>>> 0f658371c23a960ef7067489c9becaccb9a73305
+import Popular from './PopularTest'
+import TopRated from "./TopRatedTest"
+import Bandeau from "./BandeauTest"
+import Upcoming from "./UpComingTest"
+import NowPlaying from "./NowPlayingTest"
 
 
 class Home extends Component {
@@ -18,61 +17,24 @@ class Home extends Component {
             <div className="p-3 mb-2 bg-dark text-white">
 
                 <div className='row'>
-                    <div><h1 className="text-left">Bandeau Pub</h1></div>
-                    <div>  <img src="https://picsum.photos/id/237/1400/300" />
+                    <div className="col-12 display-1">
+                        <Bandeau></Bandeau>
                     </div>
-                    <div className="row flex">
-                        <h1 className="text-left">Up Coming </h1>
+                    <div className="col-12 display-2">
+                        <Upcoming></Upcoming>
                     </div>
-                    <div className="row flex">
-                        <div className="col-2" > <img src="https://picsum.photos/id/237/200/300" /></div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/566/200/300" /> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/568/200/300" /> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/237/200/300" /> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/568/200/300" /> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/237/200/300" /> </div>
-                    </div>
-                    <div className="row flex">
+                    <div className="col-12 display-3">
                         <Popular></Popular>
                     </div>
-                    {/* <h1 className="text-left">Popular</h1>
-                    </div>
-                    <div className="row flex">
-                    <div className="col-2" >  <img src="https://picsum.photos/id/237/200/300"/></div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/566/200/300"/> </div> 
-                        <div className="col-2"> <img src="https://picsum.photos/id/568/200/300"/> </div> 
-                        <div className="col-2"> <img src="https://picsum.photos/id/237/200/300"/> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/568/200/300"/> </div> 
-                        <div className="col-2"> <img src="https://picsum.photos/id/237/200/300"/> </div>
-                    </div> */}
-                    <div className="row">
-<<<<<<< HEAD
+                    <div className="col-12 display-4">
                         <TopRated></TopRated>
-=======
-                        <h1 className="text-left">Top Rated</h1>
                     </div>
-                    <div className="row">
-                        <div className="col-2" >  <img src="https://picsum.photos/id/237/200/300" /></div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/566/200/300" /> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/568/200/300" /> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/237/200/300" /> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/568/200/300" /> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/237/200/300" /> </div>
->>>>>>> 0f658371c23a960ef7067489c9becaccb9a73305
-                    </div>
-                    <div className="row">
-                        <h1 className="text-left">Now playing</h1>
-                    </div>
-                    <div className="row">
-                        <div className="col-2" >  <img src="https://picsum.photos/id/237/200/300" /></div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/566/200/300" /> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/568/200/300" /> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/237/200/300" /> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/568/200/300" /> </div>
-                        <div className="col-2"> <img src="https://picsum.photos/id/237/200/300" /> </div>
+                    <div className="col-12 display-5">
+                        <NowPlaying></NowPlaying>
                     </div>
                 </div>
             </div>
+        
         )
     }
 }
