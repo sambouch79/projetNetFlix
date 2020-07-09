@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import {Upcoming} from "./upcoming/Upcoming"
+// import {Upcoming} from "./upcoming/Upcoming"
 
 import PopularTest from './PopularTest'
 import TopRated from "./TopRatedTest"
