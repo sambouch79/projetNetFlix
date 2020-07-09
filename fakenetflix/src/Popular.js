@@ -1,27 +1,30 @@
 import React, { Component } from 'react';
 import { dataservices } from "./service/dataservice"
 
-export default class Populair extends Component {
+export default class Popular extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            films: dataservices.films.Imgband
+
         }
     }
 
     render() {
-        console.log(this.state.films.Imgband)
+
         return (
 
             <div className="container">
-                <div className="row">
-                    {this.state.films.map((element) => {
-                        return (
-                            <img src={element} alt=""></img>
-                        )
-                    })}
+                <h1 className="text-left">Popular</h1>
+                <div className="row flex">
+                    <div className="col-2" > <img src="https://picsum.photos/id/237/200/300" /></div>
+                    <div className="col-2"> <img src="https://picsum.photos/id/566/200/300" /> </div>
+                    <div className="col-2"> <img src="https://picsum.photos/id/568/200/300" /> </div>
+                    <div className="col-2"> <img src="https://picsum.photos/id/237/200/300" /> </div>
+                    <div className="col-2"> <img src="https://picsum.photos/id/568/200/300" /> </div>
+                    <div className="col-2"> <img src="https://picsum.photos/id/237/200/300" /> </div>
                 </div>
-            </div >
+            </div>
+
 
 
 
