@@ -4,6 +4,7 @@ import TopRated from "./TopRatedTest"
 import Bandeau from "./BandeauTest"
 import Upcoming from "./UpComingTest"
 import NowPlaying from "./NowPlayingTest"
+import MaListe from "./MaListe"
 
 
 class Home extends Component {
@@ -31,6 +32,9 @@ class Home extends Component {
                     </div>
                     <div className="col-12 display-5">
                         <NowPlaying></NowPlaying>
+                    </div>
+                    <div className="col-12 display-6">
+                        <MaListe></MaListe>
                     </div>
                 </div>
             </div>
