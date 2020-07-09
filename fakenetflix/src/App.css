@@ -17,6 +17,17 @@ html,body {
   }
 }
 
+.bandeauG {
+  height:260px;
+  width: 300%;
+}
+
+.bandeauB {
+  height:160px 
+}
+
+
+
 .app-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -40,4 +51,22 @@ html,body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.bandeauG {
+  height:260px;
+  width: 300%;
+}
+
+.bandeauB {
+  height:160px 
+}
+
+.band {
+  height: 100%;
+}
+
+.arrow {
+height: 100%;
+color:white;
 }

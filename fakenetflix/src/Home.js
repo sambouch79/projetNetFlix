@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import {Upcoming} from "./upcoming/Upcoming"
 import PopularTest from './PopularTest'
-import TopRatedTest from "./TopRatedTest"
+import TopRated from "./TopRating"
 import BandeauTest from "./BandeauTest"
 import NowPlayingTest from "./NowPlayingTest"
 import MaListeTest from "./MaListe"
@@ -40,7 +40,7 @@ class Home extends Component {
                         <PopularTest></PopularTest>
                     </div>
                     <div className="col-12 display-4">
-                        <TopRatedTest></TopRatedTest>
+                        <TopRated></TopRated>
                     </div>
                     <div className="col-12 display-5">
                         <NowPlayingTest></NowPlayingTest>

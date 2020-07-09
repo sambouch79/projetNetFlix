@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import {dataservices} from "./service/dataservice"
 import {Arrow} from "./Arrow"
-
+import './TopRating.css'
 
 export default class TopRatedTest extends Component {
     constructor(props) {
@@ -35,32 +35,32 @@ export default class TopRatedTest extends Component {
 
     render(){
         return(
-            <div className="h-25 overflow-hiden">
+            <div className="overflow-hiden">
                 <div className= "">
                     <h1>Top Rated</h1>
                 </div>
                 <div className="row">
-                <ul className="row list-group-horizontal-sm  bg-dark text-white">
-                    <Arrow type='left' click={this.leftClick}/>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                        <li className="list-group-item"> <img src="https://picsum.photos/id/237/100/150" /></li>
-                    <Arrow type='right' click={this.rightClick}/>
-                </ul>
+                    <ul className=" row list-group-horizontal-sm  bg-dark text-white">
+                        <Arrow type='left' click={this.leftClick}/>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                            <li className="list-group-item"> <img src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg" /></li>
+                        <Arrow type='right' click={this.rightClick}/>
+                    </ul>
                 </div>
             </div>
         )
