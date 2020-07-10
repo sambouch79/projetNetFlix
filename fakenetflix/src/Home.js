@@ -8,7 +8,7 @@ import MaListeTest from "./MaListe"
 import Popular from './Popular'
 import Slideshow from './Slide'
 import './slide.css'
-import './popular.css'
+import './index.css'
 
 class Home extends Component {
     constructor(props) {

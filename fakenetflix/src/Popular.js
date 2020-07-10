@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { dataservices } from "./service/dataservice"
-import 'react-slideshow-image/dist/styles.css'
-import { Slide } from 'react-slideshow-image'
+import InfiniteCarousel from 'react-leaf-carousel';
+
 export default class Popular extends Component {
     constructor(props) {
         super(props)
@@ -16,7 +16,7 @@ export default class Popular extends Component {
         let i = 1;
         for (i of this.state.films) {
             console.log(i.Imgband)
-            images.push(<img src={i.Imgband} alt="img" className='col images' />)
+            images.push(<img src={i.Imgband} alt="img" className='col images zoom' />)
 
         }
         return images
