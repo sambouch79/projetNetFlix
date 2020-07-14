@@ -27,7 +27,7 @@ export class dataservices {
             Runtime: 148,
             nbview: 0,
             ImgCaroussel: '',
-            ImgAff: 'http://image.tmdb.org/t/p/w500///s3TBrRGB1iav7gFOCNx3H31MoES.jpg">',
+            ImgAff: 'http://image.tmdb.org/t/p/w500///s3TBrRGB1iav7gFOCNx3H31MoES.jpg',
             Imgband: 'http://image.tmdb.org/t/p/w500///s3TBrRGB1iav7gFOCNx3H31MoES.jpg',
             urlvideo: '',
             Cast: [5, 6, 7, 8],
