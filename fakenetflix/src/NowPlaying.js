@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import { dataservices } from "./service/dataservice"
-//import Carousel from 'react-bootstrap/Carousel'
 import InfiniteCarousel from 'react-leaf-carousel'
-//import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-export default class Popular extends Component {
+export default class NowPlaying extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -16,21 +14,13 @@ export default class Popular extends Component {
     renderImages = () => {
         let images = []
         let ordredMovie = this.state.films
-        ordredMovie.sort((a, b) => b.Rating - a.Rating)
+        ordredMovie.sort((a, b) => b.Runtime - a.Runtime)
         console.log(ordredMovie)
-        let topPopular = ordredMovie.slice(0, 9);
-        for (let i of topPopular) {
+        let nowPlaying = ordredMovie.slice(0, 9);
+        for (let i of nowPlaying) {
             images.push(
                 <div><img src={i.Imgband} alt=""></img></div>
             )
-
-            // images.push(
-
-            //     <Carousel.Item style={{ 'height': "300px" }} >
-            //         <img src={i.Imgband} alt="" className='d-block w-60' />
-            //     </Carousel.Item>
-
-            // )
 
         }
         return images
@@ -44,17 +34,9 @@ export default class Popular extends Component {
         return (
             <div>
                 <div className="container-fluid">
-                    <h1 className="text-left">Popular</h1>
+                    <h1 className="text-left">Now Playing</h1>
                     <div >
-                        {/* <div>
-                            <Carousel>
 
-                                {this.renderImages()}
-
-
-                            </Carousel>
-
-                        </div> */}
                         <InfiniteCarousel
                             breakpoints={[
                                 {

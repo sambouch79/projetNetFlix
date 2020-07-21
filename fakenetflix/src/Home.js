@@ -4,11 +4,13 @@ import PopularTest from './PopularTest'
 import TopRated from "./TopRating"
 import BandeauTest from "./BandeauTest"
 import NowPlayingTest from "./NowPlayingTest"
+import NowPlaying from './NowPlaying'
 import MaListeTest from "./MaListe"
 import Popular from './Popular'
 import Slideshow from './Slide'
 import './slide.css'
 import './index.css'
+
 
 class Home extends Component {
     constructor(props) {
@@ -37,7 +39,7 @@ class Home extends Component {
                         <Popular></Popular>
                     </div>
                     <div className="col-12 display-6">
-
+                        <NowPlaying></NowPlaying>
                     </div>
                 </div>
             </div>
