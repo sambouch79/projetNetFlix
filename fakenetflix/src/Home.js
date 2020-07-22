@@ -1,14 +1,10 @@
 import React, { Component } from "react"
 import Upcoming from "./upcoming/Upcoming"
-import PopularTest from './PopularTest'
 import TopRated from "./TopRating"
-import BandeauTest from "./BandeauTest"
-import NowPlayingTest from "./NowPlayingTest"
 import NowPlaying from './NowPlaying'
-import MaListeTest from "./MaListe"
 import Popular from './Popular'
-import Slideshow from './Slide'
-import './slide.css'
+import Slideshow from './slide/Slide'
+import './slide/slide.css'
 import './index.css'
 
 

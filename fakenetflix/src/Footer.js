@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import netflix1 from './netflix1.png';
+import netflix1 from './images/netflix1.png';
 
 class Footer extends Component {
 
