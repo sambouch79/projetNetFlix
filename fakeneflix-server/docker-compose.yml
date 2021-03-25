@@ -1,0 +1,17 @@
+version: "3"
+services: 
+    server:
+        image: image_server_fakenetflix
+        ports:
+             -  "8080:8080"
+        command: node server.js
+
+
+    react:
+        image: image_react_fakenetflix
+        ports:
+             - "3000:3000"
+        command: npm start
+        depends_on:
+             - server
+        stdin_open: true

@@ -1,10 +1,10 @@
 import React, { Component } from "react"
-import Upcoming from "./upcoming/Upcoming"
+import Upcoming from "./Upcoming"
 import TopRated from "./TopRating"
 import NowPlaying from './NowPlaying'
 import Popular from './Popular'
 import Slideshow from './slide/Slide'
-import './slide/slide.css'
+
 import './index.css'
 
 

@@ -9,24 +9,15 @@ class Header extends Component {
         super(props)
         this.state = {
             films: [],
-            searchText: "",
-            username: localStorage.getItem("name")
+            searchText: ""
 
         }
-
     }
-    handleClick = () => {
-        this.setState({
-            username: ''
-        })
-        localStorage.setItem("name", '')
 
-    }
 
     searchFieldChange = (e) => {
         this.setState({
-            searchText: e.target.value,
-
+            searchText: e.target.value
         })
     }
 
@@ -36,17 +27,11 @@ class Header extends Component {
         return (
             <header className="container-fluid p-0 bg-dark">
                 <nav className="navbar navbar-dark ">
-                    <Link to="/"> <img src={netflix1} className="logo"></img></Link>
+                    <Link to="/"> <img src={netflix1} className="logo "></img></Link>
                     <form className="form-inline">
                         <input className="form-control bg-dark " type="search" placeholder="Search" aria-label="Search" value={this.state.searchText} onChange={this.searchFieldChange} />
-                        <Link to={`/SearchResult/${this.state.searchText}`}> <button className="btn btn-outline-secondry  " type="submit"  ><i className="fa fa-search" aria-hidden="true"></i></button></Link>
-
-
-                        <Link to='/Auth'><i className="fa fa-user-circle fa-2x" aria-hidden="true"></i></Link>
-
-                        <div>
-                            {(this.state.username === '') ? <p></p> : (<button onClick={this.handleClick} className="">{this.state.username} LogOut</button>)}
-                        </div>
+                        <Link to={`/SearchResult/${this.state.searchText}`}><button className="btn btn-outline-secondry  " type="submit"  ><i className="fa fa-search" aria-hidden="true"></i></button></Link>
+                        <Link to='/Auth'><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></Link>
                     </form>
                 </nav>
 

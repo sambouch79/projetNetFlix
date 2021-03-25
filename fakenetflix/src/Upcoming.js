@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import axios from 'axios';
+import { dataservices } from "./service/dataservice"
+import InfiniteCarousel from 'react-leaf-carousel'
 import { Link } from 'react-router-dom'
+import axios from 'axios';
 
 export default class NowPlaying extends Component {
     constructor(props) {
@@ -47,22 +49,6 @@ export default class NowPlaying extends Component {
             });
     }
 
-    /*renderImages = () => {
-        let images = []
-        let ordredMovie = [...this.state.films]
-        const playingNow = ordredMovie.filter(elt => elt.isPlayingNow === true)
-        playingNow.sort((a, b) => b.Runtime - a.Runtime)
-        console.log(playingNow)
-        let nowPlaying = playingNow.slice(0, 6);
-        for (let i of nowPlaying) {
-            images.push(
-                <Link to={`/MovieDetail/${i.id}`}> <div className="effect"><img src={i.Imgband} alt=""></img></div></Link>
-            )
-
-        }
-        return images
-
-    } */
     renderImages = () => {
         let images = []
         let filmsI = [...this.state.films]
@@ -85,20 +71,21 @@ export default class NowPlaying extends Component {
     }
 
 
-
     render() {
+
 
         return (
             <div>
                 <div className="container-fluid">
-                    <h1 className="text-left">Now Playing</h1>
+                    <h1 className="text-left">Up Coming</h1>
+
                     <div className="row">
                         {this.state.ImageFilm.map(e => {
                             return (
                                 <div className="col">
                                     <div class="card bg-dark text-white effect">
                                         <Link to={`/MovieDetail/${e.l}`}>
-                                            <img src={e.f} class="card-img " alt="..." />
+                                            <img src={e.f} class="card-img " alt="...aaa" />
                                         </Link>
                                         <div class="card-img-overlay">
                                             <h5 class="card-title">{e.t}</h5>
@@ -108,8 +95,11 @@ export default class NowPlaying extends Component {
                             )
                         })}
                     </div>
-                </div >
+                </div>
             </div>
+
+
         );
+
     }
 }

@@ -5,6 +5,7 @@ import gravity from '.././imgfilms/ImgCarou/gravity.jpg'
 import StrangerThings from '.././imgfilms/ImgCarou/StrangerThings.jpg'
 import 'react-slideshow-image/dist/styles.css'
 import add from '.././images/add.png'
+import './slide.css'
 
 const proprietes = {
     indicators: true,
@@ -19,14 +20,14 @@ const Slideshow = () => {
                 <div className="each-slide">
                     <div style={{ 'backgroundImage': `url(${BladeRunner})` }}>
                         <h1> BladeRunner</h1>
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                        <p className="descript">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <button className=" btn btn-link myListbtn"><img src={add}></img><span> MY LIST</span> </button>
                     </div>
                 </div>
                 <div className="each-slide">
                     <div style={{ 'backgroundImage': `url(${gravity})` }}>
-                        <h1> gravity </h1>
-                        <p> sunt in culpa qui officia deserunt mollit anim id est laborum. sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h1> Gravity </h1>
+                        <p className="descript"> sunt in culpa qui officia deserunt mollit anim id est laborum. sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <button className=" btn btn-link myListbtn"><img src={add}></img><span> MY LIST</span></button>
 
                     </div>
@@ -34,7 +35,7 @@ const Slideshow = () => {
                 <div className="each-slide">
                     <div style={{ 'backgroundImage': `url(${StrangerThings})` }}>
                         <h1> StrangerThings </h1>
-                        <p> sunt in culpa qui officia deserunt mollit anim id est laborum. sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p className="descript"> sunt in culpa qui officia deserunt mollit anim id est laborum. sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         <button className="btn btn-link myListbtn"><img src={add}></img><span> MY LIST</span></button>
                     </div>
                 </div>

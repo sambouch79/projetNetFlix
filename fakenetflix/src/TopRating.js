@@ -1,57 +1,83 @@
-import React, { Component } from "react"
-import {dataservices} from "./service/dataservice"
-import {Arrow} from "./Arrow"
-import './TopRating.css'
+import React, { Component } from 'react';
+import { dataservices } from "./service/dataservice"
+import InfiniteCarousel from 'react-leaf-carousel'
+import { Link } from 'react-router-dom'
 
-export default class TopRated extends Component {
+export default class NowPlaying extends Component {
     constructor(props) {
         super(props)
-        this.state ={
-            dataservices : []
-                }
-        
+        this.state = {
+            films: dataservices.films
+        }
     }
 
-    leftClick = () => {
-        let tmpIndex = this.state.indexActivation - 1
-        if (this.state.indexActivation == 0) {
-            tmpIndex = this.state.slides.length - 1
+    renderImages = () => {
+        let images = []
+        let ordredMovie = this.state.films
+        ordredMovie.sort((a, b) => b.Rating - a.Rating)
+        console.log(ordredMovie)
+        let topRating = ordredMovie.slice(0, 9);
+        for (let i of topRating) {
+            images.push(
+                <Link to={`/MovieDetail/${i.id}`}> <div className="effect"><img src={i.Imgband} alt=""></img></div></Link>
+            )
+
         }
-        this.setState({
-            indexActivation: tmpIndex
-        })
+        return images
+
     }
 
-    rightClick = () => {
-        let tmpIndex = this.state.indexActivation + 1
-        if (this.state.indexActivation == this.state.slides.length - 1) {
-            tmpIndex = 0
-        }
-        this.setState({
-            indexActivation: tmpIndex
-        })
-    }
 
     render() {
-        return(
-            <div className='container-fluid bg-dark bandeauG d-flex align-items-center'>
-                <div className="overflow-hiden">
-                    <div className= "">
-                        <h1>Top Rated</h1>
+
+
+        return (
+            <div>
+                <div className="container-fluid">
+                    <h1 className="text-left">Top Rating</h1>
+                    <div >
+
+                        <InfiniteCarousel
+                            breakpoints={[
+                                {
+                                    breakpoint: 500,
+                                    settings: {
+                                        slidesToShow: 4,
+                                        slidesToScroll: 1,
+                                    },
+                                },
+                                {
+                                    breakpoint: 768,
+                                    settings: {
+                                        slidesToShow: 4,
+                                        slidesToScroll: 1,
+                                    },
+                                },
+                            ]}
+                            dots={true}
+                            showSides={true}
+                            sidesOpacity={0.5}
+                            sideSize={0.1}
+                            slidesToScroll={1}
+                            slidesToShow={4}
+                            scrollOnDevice={true}
+                        >
+
+                            {this.renderImages()}
+
+
+                        </InfiniteCarousel>
+
+
                     </div>
-                    <div className='flex-row bandeauB'>
-                        <Arrow type='left' click={this.leftClick}/>
-                            <img className='band' src="http://image.tmdb.org/t/p/w500///bga3i5jcejBekr2FCGJga1fYCh.jpg"/>
-                            <img className='band' src="http://image.tmdb.org/t/p/w500///s3TBrRGB1iav7gFOCNx3H31MoES.jpg"/>
-                            <img className='band'src="http://image.tmdb.org/t/p/w500///eIi3klFf7mp3oL5EEF4mLIDs26r.jpg"/>
-                            <img className='band'src="http://image.tmdb.org/t/p/w500///72r4uAQGsa8KEv0DB2TpSu31lEB.jpg"/>
-                            <img className='band'src="http://image.tmdb.org/t/p/w500///cjAirCV9TyTQcp7mFNRnvgkoVFV.jpg"/>
-                            <img className='band'src="http://image.tmdb.org/t/p/w500///naXUDz0VGK7aaPlEpsuYW8kNVsr.jpg"/>
-                            <img className='band'src="http://image.tmdb.org/t/p/w500///fKtYXUhX5fxMxzQfyUcQW9Shik6.jpg"/>
-                        <Arrow type='right' click={this.rightClick}/>
-                    </div>
+
                 </div>
             </div>
-        )
+
+
+
+
+        );
+
     }
-    }
+}

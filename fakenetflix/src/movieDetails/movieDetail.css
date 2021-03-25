@@ -1,0 +1,74 @@
+p{
+    color:lightgray;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+
+h2{
+    color:lightgray;
+    height: 50px;
+    text-align: left;
+}
+.imgaff{
+    height: 100%;
+    width: 90%;
+    position: absolute;
+}
+
+.filmDetail{
+    height: auto;
+}
+.casting{
+    
+    height: 25rem; 
+  
+}
+.cast{
+    text-align: left;
+}
+.heart{
+    z-index: 1;
+    position: absolute;
+    color: whitesmoke;
+}
+
+.heart:hover{
+    color: red;
+    cursor: pointer;
+}
+.heartclicked
+{
+    color: red;
+}
+.detail{
+    height: auto;
+    width: 100%;
+    text-align: justify;
+    padding-top: 5px;
+}
+.imgActor{
+    height: 70%;
+    width: auto;
+    
+}
+.actor{
+    text-align:center;
+    
+}
+.nameActor{
+    text-align: center;
+    color: lightgray;
+}
+h5{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+  
+
+
+
+

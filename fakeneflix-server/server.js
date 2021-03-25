@@ -12,21 +12,25 @@ app.use((req, res, next) => {
     next()
 })
 app.use(bodyParser.json())
+
 const getMovies = () => {
     const moviesJson = fs.readFileSync("data/movies.json")
     const movies = JSON.parse(moviesJson)
     return movies
 }
-app.get('/movies/:ID', (req, res) => {
 
-    res.json()
-})
 app.get('/', (req, res) => {
+    res.json(getMovies)
+})
 
+app.get('/MovieDetail/:id', (req, res) => {
+    const movieDetail = getMovies().filter(f => f.id == req.match.params.id)
+    res.json(movieDetail)
 })
-app.get('/', (req, res) => {
+
+app.get('/Auth', (req, res) => {
 
 })
 app.listen(port, () => {
-    console.log('server started on port ${port}')
+    console.log('server started on port ' + port)
 })
